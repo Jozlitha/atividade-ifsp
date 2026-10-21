@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Entre Mãos Terapias</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo_em.png" width="250" title="Entre Mãos" href="index.html" />
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="terapias.html">Terapias</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Agende seu horário</h1>
+        <p>
+            Por favor, preencha com suas informações de contato para realizar seu pré-agendamento.<br>
+            Nosso time irá entrar em contato com você para concluir seu agendamento e pagamento.
+        </p>
+    </div>
+     <main class="main">
+        <div class="agendar">
+            <h3>Pré-agendamento</h3>
+            <form name="formAgendar" method="get">
+                <p>
+                    <label>Nome:
+                        <input type="text" placeholder="DIGITE SEU NOME" name="nome" required />
+                    </label>
+                    <label>E-mail:
+                        <input type="email" name="email" placeholder="DIGITE SEU E-MAIL" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Celular:
+                        <input type="tel" name="celular" placeholder="DIGITE SEU CELULAR" required />
+                    </label>
+                    <label for="wpp">
+                        O número é WhatsApp:
+                        <input type="checkbox" name="whatsapp" id="wpp" />
+                    </label>
+                </p>
+                <p>
+                    <label>Confirme seu procedimento:
+                        <select name="procedimento" required>
+                            <option value="">SELECIONE</option>
+                            <option value="M.Relaxante">Massagem Relaxante</option>
+                            <option value="Reflexologia">Reflexologia Podal</option>
+                            <option value="Pedras Quentes">Massagem com Pedras Quentes</option>
+                        </select>
+                    </label>
+                    </p>
+                    <p><label>Selecione a data:
+                        <input type="date" name="data" required />
+                    </label>
+                </p>
+                <p><button type="submit">Enviar</button></p>
+            </form>
+        </div>
+    </main>
+    <div class="footer">
+        <p>Desenvolvido por Litha | © 2026 Lithas Tecnologias</p>
+    </div>
+</body>
+
+</html>
